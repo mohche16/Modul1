@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+
+        <title>The HTML5 Herald</title>
+        <meta name="description" content="The HTML5 Herald">
+        <meta name="author" content="SitePoint">
+
+    </head>
+
+    <body>
+        <script>
+            // Uppgift1
+            var variable1 = "Var variable";
+            let variable2 = "Let variable";
+            const variable3 = "Const variable";
+
+            // Uppgift2
+            let var1 = true;
+            let var2 = 1;
+            let var3 = "Mohammed";
+            let var4 = {};
+            let var5 = [];
+
+            // Uppgift3
+            function myFunction1(num1, num2) {
+                return num1 + num2;
+            }
+            let sum = myFunction1(2, 2);
+            console.log("Summan blir: ", sum);
+
+            // Uppgift4
+            let currDate = new Date()
+            console.log(currDate);
+
+            // Uppgift5
+            let myObj = {
+                name: "Mohammed",
+                age: 20,
+                height: 1.95,
+
+                logInfo() {
+                    console.log("Name: ", this.name, " / Age:", this.age, " / Height: ", this.height)
+                }
+            }
+            myObj.logInfo();
+
+            // Uppgift6
+            let myArr = [
+                4,
+                8,
+                15,
+                16,
+                23,
+                42
+            ];
+            console.log(myArr);
+            console.log(myArr[myArr.length - 1]);
+            let myArrLessThan20 = myArr.filter(function (item) {
+                return item < 20;
+            })
+            let doubledArray = myArrLessThan20.map(function (item) {
+                return item * 2;
+            })
+            console.log(myArrLessThan20);
+            console.log(doubledArray);
+
+            doubledArray.forEach(function (item) {
+                console.log(item);
+            })
+
+            // Uppgift7
+            let i = 1;
+            while (i <= 6) {
+                if (i <= 3) 
+                    console.log("Loop ", i);
+                
+
+                if (i > 3) 
+                    console.log("Almost done...");
+                
+
+                if (i == 6) 
+                    console.log("Done!");
+                
+
+
+                i++;
+            }
+        </script>>
+    </body>
+</html>
